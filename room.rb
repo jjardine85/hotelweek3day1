@@ -12,4 +12,16 @@ attr_reader :name, :capacity, :guests
     return @guests.length
   end
 
+  def add_guest(guest)
+    @guests << guest
+  end
+
+  def remove_guest(guest)
+    @guests.delete(guest)
+  end
+
+  def empty_room
+    @guests = []
+  end
+
 end
