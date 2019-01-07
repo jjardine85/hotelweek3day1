@@ -39,8 +39,8 @@ class RoomTest < MiniTest::Test
   end
 
   def test_can_remove_guest
-    @room1.add_guest(@guest2)
-    @room1.remove_guest(@guest2)
+    @room.add_guest(@guest2)
+    @room.remove_guest(@guest2)
     assert_equal([], @room.guests)
   end
 
